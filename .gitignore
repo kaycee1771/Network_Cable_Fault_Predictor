@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.pkl
+*.log
+*.csv
+.env
+.vscode/
+.idea/
+cable-env/

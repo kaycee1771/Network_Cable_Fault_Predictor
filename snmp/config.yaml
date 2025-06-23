@@ -1,0 +1,21 @@
+community: public
+version: 2c
+poll_interval: 60
+
+devices:
+  - name: switch_1
+    ip: 127.0.0.1
+    interfaces:
+      - name: eth1
+        oid_base: 1.3.6.1.2.1.2.2.1
+        index: 1
+      - name: eth2
+        oid_base: 1.3.6.1.2.1.2.2.1
+        index: 2
+
+oids:
+  in_octets: 10
+  out_octets: 16
+  in_errors: 14
+  out_errors: 20
+  speed: 5
