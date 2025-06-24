@@ -94,14 +94,11 @@ python monitor/run_monitor.py
 
 ## 🔮 Upcoming Features
 
-### ✅ Self-Updating Model from Field Logs  
-A system that automatically retrains itself on historical logs and real-world behavior to improve accuracy over time. This creates a true **feedback loop**.
+### ✅ Self-Learning Auto-Tuner (Online ML)
+A model to continuously retrain on real data as it observes new traffic patterns or degradation.
 
-### 🔭 Time-to-Failure Prediction  
-Using a **regression model** to estimate “⏳ time remaining before failure,” enabling **preventive** maintenance, not just reactive classification.
+### 🔭 Trend-Based Degradation Forecasting
+Use time-series prediction (e.g., LSTM or Prophet) to predict future error rates from traffic trends.
 
-### 📊 Real-Time Grafana Dashboard  
-Push cable health data to **Grafana + Prometheus** or **Plotly Dash**, for real-time visualization of interface health, historical trends, and model confidence.
-
-### 🧬 Entropy + Signal Pattern Analysis  
-Go beyond simple error counters by computing **entropy scores** of signal patterns over time to detect **early signs of fraying or physical wear** — like zero-day detection for cables.
+### 📊 Port Behavior Fingerprinting (Zero-Day Cables)
+Profile the normal behavior of each port and raise flags on unusual patterns, even with no prior label.
